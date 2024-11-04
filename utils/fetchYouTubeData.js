@@ -2,13 +2,13 @@ const axios = require('axios');
 
 const fetchYouTubeData = async () => {
   try {
-    const response = await axios.get('https://api.crstlnz.my.id/api/jkt48_youtube', {
+    const response = await axios.get('https://api.crstlnz.my.id/api/member/ella', {
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
         'Accept': 'application/json',
         'Accept-Language': 'en-US,en;q=0.9',
-        'Origin': 'https://your-vercel-domain.vercel.app',
-        'Referer': 'https://your-vercel-domain.vercel.app/',
+        'Origin': 'http://localhost:3000',
+        'Referer': 'http://localhost:3000',
       },
       // Increase timeout to handle CloudFlare challenges
       timeout: 10000,
